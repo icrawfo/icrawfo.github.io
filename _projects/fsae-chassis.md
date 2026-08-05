@@ -27,8 +27,19 @@ stats:
     label: Overall Finish, FSAE Michigan
 gallery:
   - caption: >-
-      Chassis mid-weld on the tube-notching fixture, showing jigging and
-      tack welds before final passes.
+      The torsional rigidity test rig &mdash; a pivoting see-saw beam bolted
+      to the chassis through laser-cut, CNC-bent adaptors, mid-test with dial
+      indicators in frame.
+  - caption: >-
+      The crossmemberless front bulkhead test coupon (a 100mm section cut to
+      replicate the real connection point) loaded in the Instron.
+  - caption: >-
+      Side-by-side of a laser/CNC-notched tube joint vs. a hand-notched one
+      &mdash; a shot that shows the accuracy difference that drove the
+      process change.
+  - caption: >-
+      Chassis mid-weld on this year's fixture, showing the suspension
+      hardpoints and engine mount held in precision jigging.
   - caption: >-
       Close-up of a finished TIG weld bead on a chromoly joint &mdash; a shot
       that shows bead consistency and heat-affected zone control.
@@ -36,8 +47,8 @@ gallery:
       Screenshot of the ANSYS Mechanical torsional rigidity simulation,
       deformation contour plot with the load/constraint setup visible.
   - caption: >-
-      The 6061-aluminum pedal box fresh off the HAAS, showing the machined
-      press-fit bosses.
+      The 6061-aluminum pedal box fresh off the HAAS, including the
+      mid-season 3rd-pedal revision.
   - caption: >-
       Ian welding at the table (PPE on, arc visible) &mdash; a good action
       shot for the "who is this person" read.
@@ -71,35 +82,95 @@ powertrain parts.
 ## Design & Analysis
 
 The design target for this season is a sub-55&nbsp;lb chassis (untabbed,
-unwelded), down from 63&nbsp;lb the prior season. I run the structural
-validation in ANSYS Mechanical, using torsional rigidity as the primary
-stiffness metric &mdash; this season's design hit 3,000&nbsp;N&middot;m/deg
-against a 2,100&nbsp;N&middot;m/deg target, well past what we needed without
-giving back the weight savings.
+unwelded), down from 63&nbsp;lb the prior season. Sizing starts from the
+minimum tube requirements in the rules (the SES &mdash; Structural
+Equivalency Spreadsheet &mdash; that governs anything deviating from the
+baseline steel-tube spec), and from there I only upsize a tube when ANSYS
+shows it's actually needed, rather than oversizing preemptively the way a lot
+of teams do to stay safe &mdash; that habit is where a lot of unnecessary
+chassis weight usually comes from.
+
+I run three main load cases &mdash; braking, cornering, and acceleration
+&mdash; to pull load-transfer numbers and size the frame around what the car
+actually sees, plus torsional rigidity as the primary stiffness metric. This
+season's design hit 3,000&nbsp;N&middot;m/deg against a 2,100&nbsp;N&middot;m/deg
+target, well past what we needed without giving back the weight savings.
 
 The biggest design decision this cycle was switching the tube material from
 1020 DOM steel to 4130 chromoly. Chromoly's higher yield strength let us drop
 wall thickness while holding the same structural targets, which is where most
-of the weight came out of the design. It's a harder material to weld
-correctly &mdash; chromoly is more sensitive to heat input and post-weld
-treatment than mild steel &mdash; which fed directly into how I planned the
-welding sequence for manufacturing.
+of the weight came out of the design. We're now looking into heat-treating
+the chassis (something we've never done before) to get even more out of the
+material, though it's not confirmed yet &mdash; it comes down to budget.
+
+### How We Actually Measure Torsional Rigidity
+
+TR isn't just a simulation number &mdash; we validate it physically. We built
+a rig that works like a see-saw: a pivoting beam mounted at the front of the
+chassis lets us apply a controlled twist, with laser-cut, CNC-bent adaptors
+bolting the rig to the frame and dial indicators reading deflection at fixed
+points. That measured deflection is what we back-calculate the actual
+N&middot;m/deg number from, rather than trusting the FEA output on its own.
+
+## Rules-Driven Testing: The Crossmemberless Bulkhead
+
+One of the bigger engineering swings this season is a crossmemberless front
+bulkhead &mdash; removing a structural member the rules technically require
+unless you can prove an equivalent design is just as safe. That proof has to
+be physical, not just simulated, so we built a test article: a 100&nbsp;mm
+section cut to replicate the actual bulkhead connection point, loaded on an
+Instron to see exactly where and how it fails. That data is what lets us make
+the case that the lighter, crossmemberless design meets the same safety bar
+as the standard one.
 
 ## Manufacturing
 
 I manufactured and TIG-welded the prior season's chassis start to finish:
 98&nbsp;lb with tabs, down from 122&nbsp;lb two seasons earlier, and the
-program's first one-year chassis build in 20 years. Everything downstream of
-the frame runs through me too &mdash; I CNC-machined the 6061-aluminum pedal
-box on the HAAS to &plusmn;0.003&Prime; press-fit tolerances with zero
-failed fits, and fabricated the suspension and powertrain components that
-don't get outsourced.
+program's first one-year chassis build in 20 years.
 
-The one place I want to get better: welded suspension pickup-point accuracy.
-Last season's chassis came in at 1.25&nbsp;mm average deviation from nominal
-(6&nbsp;mm at the worst point), mostly from weld draw and fixturing error.
-It didn't cause any failures, but it's the clearest target for improvement
-in how I sequence welds and hold tube position through the process.
+Last year we hand-notched every tube, and it's a big part of why that
+chassis ended up with suspension pickup points averaging 1.25&nbsp;mm off
+nominal (6&nbsp;mm at the worst point) &mdash; hand notching just doesn't
+hold the same accuracy as a machine does. This season we're working with
+outside shops for CNC laser notching and CNC tube bending instead, and I
+changed the fixturing strategy to match: last year's fixture held every tube
+at mid-span, spreading clamping evenly across the frame; this year's fixture
+concentrates precision specifically at the suspension hardpoints and the
+engine mount, and lets the less critical areas take up whatever warping
+happens instead. Better to control the tolerances that actually matter and
+let the rest float than spread your accuracy thin trying to hold everything
+equally.
+
+Everything downstream of the frame runs through me too &mdash; I CNC-machined
+the 6061-aluminum pedal box on the HAAS to &plusmn;0.003&Prime; press-fit
+tolerances with zero failed fits, running all of the CAM programming for it
+myself, then modified it mid-season to add a third pedal after the team ran
+into a problem later in the year that required one.
+
+## Beyond the Chassis: Brakes & Powertrain
+
+The chassis subteam's scope on this car goes well past the frame itself.
+I've built all of the powertrain team's mounting systems, 3D-printed the
+intake manifold, and manufactured the current exhaust system. We're now
+designing an all-new header set for this season, working through some real
+packaging constraints while trying to optimize scavenging for more low-RPM
+performance &mdash; that'll be built and welded once the design is locked.
+
+## How I Lead the Team
+
+Leading chassis is different from leading most other FSAE subteams, because
+the chassis is fundamentally one connected structure rather than a set of
+separable parts &mdash; you can't just hand someone "a component" the way a
+suspension or aero lead can. Instead I run it more as a collective: each
+member takes ownership of a region &mdash; front-end geometry, mid-section
+geometry, and so on &mdash; and runs their own analysis and design reviews on
+it. What I actually care about isn't the fine detail of any one person's
+design; it's whether they can tell me *why* one geometry outperforms another
+and how that reasoning should shape the master chassis. We back that up with
+weekly meetings and dedicated work sessions to keep design and manufacturing
+moving together instead of design finishing months before anyone picks up a
+grinder.
 
 ## Results & What's Next
 
