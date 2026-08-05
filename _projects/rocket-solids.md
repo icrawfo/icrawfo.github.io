@@ -1,7 +1,7 @@
 ---
 layout: entry
 type: project
-order: 3
+order: 2
 title: UCI Rocket Project Solids
 role: Propulsion &amp; Manufacturing Member
 org: UCI Rocket Project Solids

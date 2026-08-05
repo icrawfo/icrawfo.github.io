@@ -2,14 +2,15 @@
 layout: entry
 type: project
 order: 1
-title: FSAE Chassis
+title: FSAE
 role: Chassis Lead
-org: Anteater Formula Racing (FSAE)
+org: Anteater Formula Racing
 dates: Sep 2024 &ndash; Present
 location: Irvine, CA &middot; 45-Member Team &middot; 6-Person Chassis Subteam
 tagline: >-
-  Leading design, FEA validation, and manufacturing of a sub-55&nbsp;lb chassis
-  for UC Irvine's Formula SAE team &mdash; and TIG-welding most of it myself.
+  Leading chassis design, FEA validation, and manufacturing for UC Irvine's
+  Formula SAE team &mdash; plus the brakes and powertrain fabrication that
+  comes with it.
 card_placeholder: >-
   Close-up 3/4 shot of the bare welded chassis on the fixture table, good side
   lighting to show weld beads and tube geometry.
@@ -21,8 +22,8 @@ stats:
     label: Current Chassis Weight (Unwelded, No Tabs)
   - value: "3,000"
     label: N&middot;m/deg Torsional Rigidity (vs. 2,100 Target)
-  - value: "1st in 20 Yrs"
-    label: One-Year Chassis Rebuild (Program First)
+  - value: "1.25 mm"
+    label: Avg. Hardpoint Deviation After Manufacturing
   - value: "51st"
     label: Overall Finish, FSAE Michigan
 gallery:
@@ -46,6 +47,16 @@ gallery:
   - caption: >-
       Screenshot of the ANSYS Mechanical torsional rigidity simulation,
       deformation contour plot with the load/constraint setup visible.
+  - caption: >-
+      The 6061-aluminum pedal box fresh off the HAAS, including the
+      mid-season 3rd-pedal revision.
+  - caption: >-
+      The 3D-printed intake manifold mounted on the engine.
+  - caption: >-
+      The current exhaust system, manufactured and installed.
+  - caption: >-
+      CAD screenshot of the new header design in progress, showing the
+      packaging constraints around the engine bay.
   - caption: >-
       Ian welding at the table (PPE on, arc visible) &mdash; a good action
       shot for the "who is this person" read.
@@ -74,7 +85,9 @@ and built the fixturing used to hold tube geometry through the welding
 process. This season, as lead, my focus shifted upstream to design and FEA
 validation of the next chassis, while still doing the bulk of the shop work
 across the car &mdash; the pedal box, suspension components, and several
-powertrain parts.
+powertrain parts. Chassis isn't the only thing I work on for the team, either
+&mdash; anywhere the car needed a part machined, mounted, or welded outside
+the frame itself, it tends to come through me too.
 
 ## Design & Analysis
 
@@ -138,6 +151,22 @@ engine mount, and lets the less critical areas take up whatever warping
 happens instead. Better to control the tolerances that actually matter and
 let the rest float than spread your accuracy thin trying to hold everything
 equally.
+
+## Beyond the Chassis: Brakes & Powertrain
+
+I manufactured almost the entire pedal box myself, running all of the CNC CAM
+programming for it and machining it on the HAAS to &plusmn;0.003&Prime;
+press-fit tolerances with zero failed fits. Partway through last season the
+team ran into a problem that required a third pedal, so I went back into the
+design and modified the pedal box to add one &mdash; a real mid-season
+iteration rather than a clean one-shot build.
+
+On the powertrain side, I've built all of the mounting systems, 3D-printed
+the intake manifold, and manufactured the current exhaust system. We're now
+designing an all-new header set for this season, working through some real
+packaging constraints in the engine bay while trying to optimize scavenging
+for more low-RPM performance &mdash; that'll be built and welded once the
+design is locked.
 
 ## How I Lead the Team
 
