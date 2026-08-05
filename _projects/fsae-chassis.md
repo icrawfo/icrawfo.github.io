@@ -21,8 +21,8 @@ stats:
     label: Current Chassis Weight (Unwelded, No Tabs)
   - value: "3,000"
     label: N&middot;m/deg Torsional Rigidity (vs. 2,100 Target)
-  - value: "&plusmn;0.003&Prime;"
-    label: Pedal Box Press-Fit Tolerance
+  - value: "1st in 20 Yrs"
+    label: One-Year Chassis Rebuild (Program First)
   - value: "51st"
     label: Overall Finish, FSAE Michigan
 gallery:
