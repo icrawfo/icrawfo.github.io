@@ -1,0 +1,105 @@
+%% Ian Crawford - Resume
+%% Compile with pdflatex (no external fonts/packages beyond a standard TeX Live / MiKTeX install).
+%% ATS notes:
+%%  - Single column, no tables, no text boxes, no graphics -> parses cleanly in Workday/Greenhouse/Lever/Taleo.
+%%  - \pdfgentounicode=1 below forces a proper ToUnicode CMap so copy-pasted / extracted text is not garbled.
+%%  - hidelinks keeps hyperlinks from printing colored boxes while still being clickable in the PDF.
+
+\documentclass[10.5pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% --- ATS text-extraction fix: force a ToUnicode CMap so PDF text copy/pastes correctly ---
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+
+% --- Section headings: bold small-caps with a rule underneath ---
+\titleformat{\section}{\large\bfseries\scshape}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{5pt}{3pt}
+
+% --- Tight bullet list ---
+\newenvironment{tightitemize}{%
+  \begin{itemize}[leftmargin=13pt, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt]
+}{\end{itemize}}
+
+% --- Entry heading: Title/Role on the left, Dates on the right; Org/Team on the left, Location on the right ---
+\newcommand{\entry}[4]{%
+  \textbf{#1} \hfill \textbf{#2}\\
+  \textit{#3} \hfill \textit{#4}\\[-3pt]
+}
+
+\begin{document}
+
+% ============================= HEADER =============================
+\begin{center}
+  {\LARGE \textbf{Ian Crawford}}\\[3pt]
+  Irvine, CA (Open to Relocation) ~$\vert$~
+  \href{mailto:icrawford8888@gmail.com}{icrawford8888@gmail.com} ~$\vert$~
+  949-738-3879 ~$\vert$~
+  \href{https://sites.google.com/view/ian-crawford-engineering/home}{sites.google.com/view/ian-crawford-engineering} \\[2pt]
+  \small Authorized to work in the U.S. (F-1, CPT/OPT Eligible)
+\end{center}
+\vspace{-10pt}
+
+% ============================= EDUCATION =============================
+\section{Education}
+\entry{University of California, Irvine}{Expected June 2028}{B.S. Mechanical Engineering \& B.S. Aerospace Engineering (Double Major)}{Irvine, CA}
+GPA: 3.78/4.0 \quad $\vert$ \quad Dean's List: All Quarters\\
+\textbf{Relevant Coursework:} Computer-Aided Design, Fluid Mechanics, Mechanics of Materials, Vibrations, Engineering Mechanics (Statics \& Dynamics), Feedback Control Systems
+
+% ============================= EXPERIENCE =============================
+\section{Experience}
+
+\entry{Project Management Intern}{Jun 2026 -- Sep 2026}{Fortinet}{Vancouver, BC, Canada}
+\begin{tightitemize}
+  \item Designed and deployed an internal search tool unifying $\sim$100 spreadsheets used daily by an 8-person team and partner teams, cutting lookups from 10--20 minutes to under 15 seconds; remains in active use.
+  \item Consolidated redundant, siloed tracking spreadsheets across teams into standardized workflows, reducing duplicate data entry and improving cross-team visibility.
+  \item Authored weekly status reports translating project data into actionable summaries for executive stakeholders.
+\end{tightitemize}
+
+\entry{Manufacturing Engineering Intern / Teaching Assistant}{Jan 2026 -- Present}{UCI Undergraduate Machine Shop}{Irvine, CA}
+\begin{tightitemize}
+  \item Sole undergraduate certified to operate/program UCI's HAAS CNC mill; support $\sim$50+ students weekly across two 12-person course sections plus walk-in shop users.
+  \item Machined components for 15+ faculty and graduate research projects since January 2026, including custom brackets and test fixtures.
+  \item Helped commission the shop's HAAS CNC and establish its CAM training curriculum; optimized toolpaths to cut cycle time on a production wheel-center part for the school's EV team.
+\end{tightitemize}
+
+% ============================= PROJECTS =============================
+\section{Projects}
+
+\entry{Chassis Lead (6-Person Subteam)}{Sep 2024 -- Present}{Anteater Formula Racing (FSAE, 45 Members)}{Irvine, CA}
+\begin{tightitemize}
+  \item Own design and FEA validation (ANSYS Mechanical) of the current chassis: 3{,}000 N$\cdot$m/deg torsional rigidity, 43\% above the 2{,}100 target, targeting 55 lb (untabbed, unwelded) vs. 63 lb the prior season.
+  \item Selected 4130 chromoly over 1020 DOM steel, leveraging higher yield strength to cut tube wall thickness while holding structural targets.
+  \item Manufactured and TIG-welded the prior chassis (98 lb w/ tabs, down from 122 lb two seasons earlier) -- the program's first one-year build cycle in 20 years -- and fabricated the pedal box, suspension, and powertrain components.
+  \item CNC-machined the 6061-aluminum pedal box to $\pm$0.003 in press-fit tolerances with zero failures; held welded suspension pickup-point accuracy to 1.25 mm average (6 mm worst-case).
+  \item Helped raise the team from 79th overall (no acceleration run) to 51st overall and 10th in acceleration at FSAE Michigan.
+\end{tightitemize}
+
+\entry{Propulsion \& Manufacturing Member}{May 2025 -- Mar 2026}{UCI Rocket Project Solids (30 Members)}{Irvine, CA}
+\begin{tightitemize}
+  \item Designed manufacturing processes for graphite motor nozzles and 6061-aluminum motor cases/carrier rings; processes remain in use by the team.
+  \item Machined 4 graphite nozzles for an N-class ($\sim$3{,}000 N avg. thrust) APCP motor: 3 characterization nozzles with a precision 0.03 in center bore, and 1 full-scale static-fire nozzle with a $\sim$1 in center bore.
+  \item Processes established during my tenure remained in use as the team went on to place in the top 20 at IREC.
+\end{tightitemize}
+
+% ============================= SKILLS =============================
+\section{Technical Skills}
+\textbf{CAD/CAM:} SolidWorks (Proficient; CSWA in progress), Fusion 360 (CAM Certified), Siemens NX (Familiar)\\
+\textbf{Simulation:} ANSYS Mechanical (FEA), SolidWorks Simulation, ANSYS Fluent (CFD, Familiar)\\
+\textbf{Programming:} Python, MATLAB, Simulink (Familiar)\\
+\textbf{Manufacturing:} HAAS CNC (Certified Operator/Programmer), Bridgeport Manual Mill, CNC \& Manual Lathe, TIG Welding (steel/stainless to 0.020 in, aluminum to 0.065 in; 150--200 hrs), Plasma Cutting, CNC Routing\\
+\textbf{Design \& Quality:} GD\&T (ASME Y14.5), Tolerance Stack-Up Analysis, DFM\\
+\textbf{Certifications:} HAAS CNC Operator (UCI); Fusion 360 CAM; CSWA (In Progress)
+
+\end{document}
