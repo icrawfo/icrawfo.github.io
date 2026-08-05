@@ -7,6 +7,7 @@ url: "https://icrawfo.github.io"
 baseurl: ""
 author: Ian Crawford
 email: icrawford8888@gmail.com
+permalink: pretty
 
 markdown: kramdown
 kramdown:
@@ -27,7 +28,7 @@ collections:
     permalink: /experience/:path/
 
 exclude:
-  - resume
+  - resume/
   - Gemfile
   - Gemfile.lock
   - README.md

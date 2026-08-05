@@ -47,9 +47,6 @@ gallery:
       Screenshot of the ANSYS Mechanical torsional rigidity simulation,
       deformation contour plot with the load/constraint setup visible.
   - caption: >-
-      The 6061-aluminum pedal box fresh off the HAAS, including the
-      mid-season 3rd-pedal revision.
-  - caption: >-
       Ian welding at the table (PPE on, arc visible) &mdash; a good action
       shot for the "who is this person" read.
   - caption: >-
@@ -141,21 +138,6 @@ engine mount, and lets the less critical areas take up whatever warping
 happens instead. Better to control the tolerances that actually matter and
 let the rest float than spread your accuracy thin trying to hold everything
 equally.
-
-Everything downstream of the frame runs through me too &mdash; I CNC-machined
-the 6061-aluminum pedal box on the HAAS to &plusmn;0.003&Prime; press-fit
-tolerances with zero failed fits, running all of the CAM programming for it
-myself, then modified it mid-season to add a third pedal after the team ran
-into a problem later in the year that required one.
-
-## Beyond the Chassis: Brakes & Powertrain
-
-The chassis subteam's scope on this car goes well past the frame itself.
-I've built all of the powertrain team's mounting systems, 3D-printed the
-intake manifold, and manufactured the current exhaust system. We're now
-designing an all-new header set for this season, working through some real
-packaging constraints while trying to optimize scavenging for more low-RPM
-performance &mdash; that'll be built and welded once the design is locked.
 
 ## How I Lead the Team
 
