@@ -1,0 +1,92 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="hero-kicker">Mechanical &amp; Aerospace Engineering &mdash; UC Irvine, Class of 2028</p>
+    <h1 class="hero-title">Ian Crawford</h1>
+    <div class="hero-lede">{{ content }}</div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="{{ '/resume/' | relative_url }}" class="btn btn-ghost">Resume</a>
+    </div>
+  </div>
+  {% include media-placeholder.html caption="Wide hero shot: Ian at the FSAE car in the shop or on track, or a close-up action shot mid-TIG-weld. This is the first thing visitors see — make it count." ratio="21x9" size="hero" %}
+</section>
+
+<section class="stats-band stats-band--home">
+  <div class="container stats-grid">
+    <div class="stat"><p class="stat-value">3.78</p><p class="stat-label">GPA</p></div>
+    <div class="stat"><p class="stat-value">59 lb</p><p class="stat-label">Current FSAE Chassis Weight</p></div>
+    <div class="stat"><p class="stat-value">3,000</p><p class="stat-label">N&middot;m/deg Torsional Rigidity</p></div>
+    <div class="stat"><p class="stat-value">150&ndash;200</p><p class="stat-label">TIG Welding Hours</p></div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-heading">Projects</h2>
+    <div class="entry-grid">
+      {% assign sorted_projects = site.projects | sort: 'order' %}
+      {% for project in sorted_projects %}
+      <a href="{{ project.url | relative_url }}" class="entry-card">
+        {% include media-placeholder.html caption=project.card_placeholder ratio="16x10" size="card" %}
+        <div class="entry-card-body">
+          <p class="entry-card-kicker">{{ project.dates }}</p>
+          <h3>{{ project.title }}</h3>
+          <p class="entry-card-role">{{ project.role }}</p>
+          <p class="entry-card-tagline">{{ project.tagline }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section section--alt">
+  <div class="container">
+    <h2 class="section-heading">Experience</h2>
+    <div class="entry-grid">
+      {% assign sorted_exp = site.experience | sort: 'order' %}
+      {% for exp in sorted_exp %}
+      <a href="{{ exp.url | relative_url }}" class="entry-card">
+        {% include media-placeholder.html caption=exp.card_placeholder ratio="16x10" size="card" %}
+        <div class="entry-card-body">
+          <p class="entry-card-kicker">{{ exp.dates }}</p>
+          <h3>{{ exp.title }}</h3>
+          <p class="entry-card-role">{{ exp.role }}</p>
+          <p class="entry-card-tagline">{{ exp.tagline }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-heading">Technical Skills</h2>
+    <div class="skills-grid">
+      {% for group in site.data.skills %}
+      <div class="skills-group">
+        <h3>{{ group.category }}</h3>
+        <ul>
+          {% for item in group.items %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt contact-section">
+  <div class="container">
+    <h2 class="section-heading">Let&rsquo;s Talk</h2>
+    <p class="contact-lede">Open to mechanical/aerospace design and manufacturing roles &mdash; especially motorsports. Based in Irvine, CA, open to relocation.</p>
+    <div class="contact-links">
+      <a href="mailto:{{ site.email }}" class="btn btn-primary">{{ site.email }}</a>
+      <a href="{{ '/resume/' | relative_url }}" class="btn btn-ghost">Download Resume</a>
+      <!-- TODO: add LinkedIn + GitHub buttons here once URLs are provided -->
+    </div>
+  </div>
+</section>

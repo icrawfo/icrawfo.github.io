@@ -1,0 +1,35 @@
+title: Ian Crawford
+description: >-
+  Mechanical & Aerospace engineering student at UC Irvine — Chassis Lead for
+  Anteater Formula Racing, focused on motorsports vehicle design, FEA-driven
+  structures, and hands-on manufacturing.
+url: "https://icrawfo.github.io"
+baseurl: ""
+author: Ian Crawford
+email: icrawford8888@gmail.com
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  experience:
+    output: true
+    permalink: /experience/:path/
+
+exclude:
+  - resume
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules

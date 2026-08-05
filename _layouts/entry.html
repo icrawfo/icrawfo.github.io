@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<article class="entry entry--{{ page.type }}">
+  <header class="entry-hero">
+    <div class="container">
+      <p class="entry-kicker">{{ page.type | capitalize }}{% if page.dates %} &middot; {{ page.dates }}{% endif %}</p>
+      <h1 class="entry-title">{{ page.title }}</h1>
+      <p class="entry-role">{{ page.role }}{% if page.org %} &mdash; {{ page.org }}{% endif %}</p>
+      {% if page.tagline %}<p class="entry-tagline">{{ page.tagline }}</p>{% endif %}
+      {% if page.location %}<p class="entry-meta">{{ page.location }}</p>{% endif %}
+    </div>
+  </header>
+
+  {% if page.hero_placeholder %}
+  <div class="container">
+    {% include media-placeholder.html caption=page.hero_placeholder ratio="16x9" size="hero" %}
+  </div>
+  {% endif %}
+
+  {% if page.stats %}
+  <div class="stats-band">
+    <div class="container stats-grid">
+      {% for stat in page.stats %}
+      <div class="stat">
+        <p class="stat-value">{{ stat.value }}</p>
+        <p class="stat-label">{{ stat.label }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="container">
+    <div class="prose entry-body">
+      {{ content }}
+    </div>
+  </div>
+
+  {% if page.gallery %}
+  <div class="container">
+    <h2 class="gallery-heading">Gallery</h2>
+    <div class="gallery-grid">
+      {% for item in page.gallery %}
+      {% include media-placeholder.html caption=item.caption ratio="4x3" size="gallery" %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="container entry-back">
+    {% if page.type == "project" %}
+    <a href="{{ '/' | relative_url }}#projects" class="back-link">&larr; All Projects</a>
+    {% else %}
+    <a href="{{ '/' | relative_url }}#experience" class="back-link">&larr; All Experience</a>
+    {% endif %}
+  </div>
+</article>

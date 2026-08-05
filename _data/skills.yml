@@ -1,0 +1,32 @@
+- category: CAD / CAM
+  items:
+    - SolidWorks (Proficient; CSWA in progress)
+    - Fusion 360 (CAM Certified)
+    - Siemens NX (Familiar)
+
+- category: Simulation
+  items:
+    - ANSYS Mechanical (FEA)
+    - SolidWorks Simulation
+    - ANSYS Fluent (CFD, Familiar)
+
+- category: Programming
+  items:
+    - Python
+    - MATLAB
+    - Simulink (Familiar)
+
+- category: Manufacturing
+  items:
+    - HAAS CNC (Certified Operator / Programmer)
+    - Bridgeport Manual Mill
+    - CNC & Manual Lathe
+    - TIG Welding (steel/stainless to 0.020", aluminum to 0.065")
+    - Plasma Cutting
+    - CNC Routing
+
+- category: Design & Quality
+  items:
+    - "GD&T (ASME Y14.5)"
+    - Tolerance Stack-Up Analysis
+    - DFM
