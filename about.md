@@ -34,11 +34,11 @@ level in industry.
 
 ## Where I'm Headed
 
-My goal is to work in competitive motorsports design &mdash; race cars,
-ideally at a team or manufacturer competing in series like IMSA. I'd also be
-glad to work on the supplier side, at a company building the systems (like
-suspension) that go into those cars. I'm open to general automotive as a path
-into that world, but motorsports is the target.
+What draws me to motorsports is the competitive nature of it &mdash; there's
+an immediate, honest answer to whether an idea worked: the car is faster or
+it isn't. I want a career built around developing new concepts and pushing
+the limits of how fast a car can go, and chasing that is what's pointing me
+toward motorsports.
 
 ## Beyond the Shop
 
