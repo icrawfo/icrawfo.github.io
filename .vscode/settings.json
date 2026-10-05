@@ -1,0 +1,29 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "C:\\Users\\icraw\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\latexmk.exe",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.jj": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/c:\\Users\\icraw\\OneDrive\\Documents\\GitHub\\icrawfo.github.io\\resume\\Ian_Crawford_Resume.aux": true,
+        "**/c:\\Users\\icraw\\OneDrive\\Documents\\GitHub\\icrawfo.github.io\\resume\\Ian_Crawford_Resume.log": true,
+        "**/c:\\Users\\icraw\\OneDrive\\Documents\\GitHub\\icrawfo.github.io\\resume\\Ian_Crawford_Resume.gz": true,
+        "**/c:\\Users\\icraw\\OneDrive\\Documents\\GitHub\\icrawfo.github.io\\resume\\Ian_Crawford_Resume.out": true
+    }
+}
