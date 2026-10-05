@@ -51,9 +51,14 @@ gallery:
   - image: /assets/images/fsae-welding-action.jpg
     caption: >-
       Welding on the fixture table, PPE on and arc visible.
-  - caption: >-
-      Screenshot of the ANSYS Mechanical torsional rigidity simulation,
-      deformation contour plot with the load/constraint setup visible.
+  - image: /assets/images/fsae-ansys-axial-force.png
+    caption: >-
+      ANSYS Mechanical axial force results under the torsional rigidity
+      load case, full chassis contour plot.
+  - image: /assets/images/fsae-cad-pedal-box.png
+    caption: >-
+      CAD of the pedal box assembly, including the mid-season 3rd-pedal
+      revision.
   - image: /assets/images/fsae-pedal-box-mill.jpg
     caption: >-
       The 6061-aluminum pedal box on the manual mill for secondary
@@ -81,6 +86,10 @@ gallery:
   - image: /assets/images/fsae-paddock-crowd.jpg
     caption: >-
       The car being rolled out at FSAE Michigan, paddock crowd in frame.
+  - image: /assets/images/ian-portrait-shop.jpg
+    caption: >-
+      Ian with the car on the fixture table in the Vehicle Performance
+      Engineering Lab.
 ---
 
 ## The Program
