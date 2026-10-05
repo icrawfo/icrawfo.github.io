@@ -17,6 +17,7 @@ card_image: /assets/images/fortinet-reception.jpg
 hero_placeholder: >-
   Wide shot of the Vancouver office or team space, or a clean abstract shot
   representing the internal tooling work (screenshot, whiteboard, etc.).
+hero_image: /assets/images/fortinet-reception.jpg
 stats:
   - value: "~100"
     label: Spreadsheets Unified Into One Search Tool

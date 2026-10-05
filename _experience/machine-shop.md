@@ -17,6 +17,7 @@ card_image: /assets/images/machine-shop-haas-chips.jpg
 hero_placeholder: >-
   Wide shot of the machine shop floor &mdash; HAAS, Bridgeports, and lathes
   visible &mdash; ideally with some activity in frame.
+hero_image: /assets/images/machine-shop-bridgeport-indexer.jpg
 stats:
   - value: Sole
     label: Undergraduate HAAS-Certified Operator/Programmer at UCI

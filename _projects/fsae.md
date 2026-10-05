@@ -29,17 +29,6 @@ stats:
   - value: "51st"
     label: Overall Finish, FSAE Michigan
 gallery:
-  - caption: >-
-      The torsional rigidity test rig &mdash; a pivoting see-saw beam bolted
-      to the chassis through laser-cut, CNC-bent adaptors, mid-test with dial
-      indicators in frame.
-  - caption: >-
-      The crossmemberless front bulkhead test coupon &mdash; a 100mm section
-      cut to replicate the real connection point, loaded in the Instron.
-  - caption: >-
-      Side-by-side of a laser/CNC-notched tube joint vs. a hand-notched one
-      &mdash; a shot that shows the accuracy difference that drove the
-      process change.
   - image: /assets/images/fsae-cad-model.png
     caption: >-
       CAD model of the chassis, color-coded by tube group &mdash; main frame,

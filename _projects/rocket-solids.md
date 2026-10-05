@@ -55,8 +55,6 @@ gallery:
     poster: /assets/images/rocket-static-fire-poster.jpg
     caption: >-
       Static-fire test footage &mdash; motor lit, full burn.
-  - caption: >-
-      Ian at the lathe or mill working on rocket hardware.
 ---
 
 ## The Team
