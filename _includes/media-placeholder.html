@@ -1,3 +1,8 @@
+{% if include.src %}
+<div class="media-photo media-photo--{{ include.size }}" style="aspect-ratio: {{ include.ratio | replace: 'x', ' / ' }};">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | default: include.caption | default: '' }}" loading="lazy">
+</div>
+{% else %}
 <div class="media-placeholder media-placeholder--{{ include.size }}" style="aspect-ratio: {{ include.ratio | replace: 'x', ' / ' }};">
   <svg class="media-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
     <rect x="3" y="5" width="18" height="14" rx="2"/>
@@ -6,3 +11,4 @@
   </svg>
   {% if include.caption %}<p class="media-placeholder-caption">{{ include.caption }}</p>{% endif %}
 </div>
+{% endif %}

@@ -13,6 +13,7 @@ tagline: >-
 card_placeholder: >-
   Ian at the HAAS CNC control panel, or a shot of him helping a student at
   the Bridgeport mill.
+card_image: /assets/images/machine-shop-haas-chips.jpg
 hero_placeholder: >-
   Wide shot of the machine shop floor &mdash; HAAS, Bridgeports, and lathes
   visible &mdash; ideally with some activity in frame.
@@ -23,7 +24,17 @@ stats:
     label: Students Supported Weekly
   - value: "15+"
     label: Faculty/Research Projects Machined Since Jan 2026
-gallery: []
+gallery:
+  - image: /assets/images/machine-shop-haas-chips.jpg
+    caption: >-
+      The HAAS mid-cut, aluminum chips everywhere.
+  - image: /assets/images/machine-shop-cam-wheel-center.jpg
+    caption: >-
+      Fusion 360 CAM setup for the EV team's wheel-center part &mdash; the
+      toolpaths I optimized to cut cycle time.
+  - image: /assets/images/machine-shop-bracket-closeup.jpg
+    caption: >-
+      A CNC-machined aluminum bracket, fresh off the mill.
 ---
 
 ## The Role

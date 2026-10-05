@@ -14,14 +14,16 @@ tagline: >-
 card_placeholder: >-
   Close-up 3/4 shot of the bare welded chassis on the fixture table, good side
   lighting to show weld beads and tube geometry.
+card_image: /assets/images/fsae-chassis-fixture.jpg
 hero_placeholder: >-
   Wide, well-lit shot of the full chassis (welded or on the fixture table),
   or the complete car in the paddock/on track. 21:9 crop works best here.
+hero_image: /assets/images/fsae-team-car-lift.jpg
 stats:
   - value: "59 lb"
     label: Current Chassis Weight (Unwelded, No Tabs)
-  - value: "3,000"
-    label: N&middot;m/deg Torsional Rigidity (vs. 2,100 Target)
+  - value: "1,371"
+    label: lb&middot;ft/deg Torsional Rigidity (Up 33% YoY)
   - value: "1.25 mm"
     label: Avg. Hardpoint Deviation After Manufacturing
   - value: "51st"
@@ -32,37 +34,53 @@ gallery:
       to the chassis through laser-cut, CNC-bent adaptors, mid-test with dial
       indicators in frame.
   - caption: >-
-      The crossmemberless front bulkhead test coupon (a 100mm section cut to
-      replicate the real connection point) loaded in the Instron.
+      The crossmemberless front bulkhead test coupon &mdash; a 100mm section
+      cut to replicate the real connection point, loaded in the Instron.
   - caption: >-
       Side-by-side of a laser/CNC-notched tube joint vs. a hand-notched one
       &mdash; a shot that shows the accuracy difference that drove the
       process change.
-  - caption: >-
-      Chassis mid-weld on this year's fixture, showing the suspension
-      hardpoints and engine mount held in precision jigging.
-  - caption: >-
-      Close-up of a finished TIG weld bead on a chromoly joint &mdash; a shot
-      that shows bead consistency and heat-affected zone control.
+  - image: /assets/images/fsae-cad-model.png
+    caption: >-
+      CAD model of the chassis, color-coded by tube group &mdash; main frame,
+      roll hoops, bracing, and front bulkhead.
+  - image: /assets/images/fsae-fixture-build.jpg
+    caption: >-
+      Building this year's chassis fixture &mdash; aluminum extrusion towers
+      set up around the new hardpoint-focused jigging strategy.
+  - image: /assets/images/fsae-welding-action.jpg
+    caption: >-
+      Welding on the fixture table, PPE on and arc visible.
   - caption: >-
       Screenshot of the ANSYS Mechanical torsional rigidity simulation,
       deformation contour plot with the load/constraint setup visible.
-  - caption: >-
-      The 6061-aluminum pedal box fresh off the HAAS, including the
-      mid-season 3rd-pedal revision.
-  - caption: >-
+  - image: /assets/images/fsae-pedal-box-mill.jpg
+    caption: >-
+      The 6061-aluminum pedal box on the manual mill for secondary
+      operations, after the HAAS cut the primary press-fit bores.
+  - image: /assets/images/fsae-intake-manifold.jpg
+    caption: >-
       The 3D-printed intake manifold mounted on the engine.
-  - caption: >-
+  - image: /assets/images/fsae-exhaust-system.jpg
+    caption: >-
       The current exhaust system, manufactured and installed.
-  - caption: >-
-      CAD screenshot of the new header design in progress, showing the
-      packaging constraints around the engine bay.
-  - caption: >-
-      Ian welding at the table (PPE on, arc visible) &mdash; a good action
-      shot for the "who is this person" read.
-  - caption: >-
-      Full car in the paddock or on track at FSAE Michigan, ideally with
-      the team in frame.
+  - image: /assets/images/fsae-cad-header-design.png
+    caption: >-
+      CAD of the new header design in progress, showing the packaging
+      constraints around the engine bay.
+  - image: /assets/images/fsae-cad-full-assembly.png
+    caption: >-
+      Full car assembly in CAD &mdash; chassis, engine, carbon fiber seat,
+      and suspension.
+  - image: /assets/images/fsae-suspension-parts.jpg
+    caption: >-
+      Machined aluminum suspension uprights and brackets, fresh off the mill.
+  - image: /assets/images/fsae-subassembly-weld.jpg
+    caption: >-
+      TIG-welding a chassis subassembly in the shop fixture.
+  - image: /assets/images/fsae-paddock-crowd.jpg
+    caption: >-
+      The car being rolled out at FSAE Michigan, paddock crowd in frame.
 ---
 
 ## The Program
@@ -91,7 +109,7 @@ the frame itself, it tends to come through me too.
 
 ## Design & Analysis
 
-The design target for this season is a sub-55&nbsp;lb chassis (untabbed,
+The design target for this season is a sub-58&nbsp;lb chassis (untabbed,
 unwelded), down from 63&nbsp;lb the prior season. Sizing starts from the
 minimum tube requirements in the rules (the SES &mdash; Structural
 Equivalency Spreadsheet &mdash; that governs anything deviating from the
@@ -103,8 +121,9 @@ chassis weight usually comes from.
 I run three main load cases &mdash; braking, cornering, and acceleration
 &mdash; to pull load-transfer numbers and size the frame around what the car
 actually sees, plus torsional rigidity as the primary stiffness metric. This
-season's design hit 3,000&nbsp;N&middot;m/deg against a 2,100&nbsp;N&middot;m/deg
-target, well past what we needed without giving back the weight savings.
+season's design hit 1,371&nbsp;lb&middot;ft/deg, up 33% from last season's
+1,027&nbsp;lb&middot;ft/deg, well past what we needed without giving back the
+weight savings.
 
 The biggest design decision this cycle was switching the tube material from
 1020 DOM steel to 4130 chromoly. Chromoly's higher yield strength let us drop
@@ -113,6 +132,17 @@ of the weight came out of the design. We're now looking into heat-treating
 the chassis (something we've never done before) to get even more out of the
 material, though it's not confirmed yet &mdash; it comes down to budget.
 
+### Current Research: Bonding Carbon Fiber to Steel Tubing
+
+Beyond this season's chassis, I'm leading research into bonding carbon fiber
+to the steel chassis tubing, with the goal of pushing torsional rigidity
+higher than an all-steel tube frame can achieve on its own &mdash; the carbon
+fiber would reinforce the tube walls rather than replace them, adding
+stiffness without the cost and manufacturing overhaul of a full composite
+monocoque. This is early-stage research only: we're still working through
+bonding method and surface prep (adhesive selection, steel surface treatment,
+layup approach) and nothing has been implemented on an actual chassis yet.
+
 ### How We Actually Measure Torsional Rigidity
 
 TR isn't just a simulation number &mdash; we validate it physically. We built
@@ -120,7 +150,7 @@ a rig that works like a see-saw: a pivoting beam mounted at the front of the
 chassis lets us apply a controlled twist, with laser-cut, CNC-bent adaptors
 bolting the rig to the frame and dial indicators reading deflection at fixed
 points. That measured deflection is what we back-calculate the actual
-N&middot;m/deg number from, rather than trusting the FEA output on its own.
+lb&middot;ft/deg number from, rather than trusting the FEA output on its own.
 
 ## Rules-Driven Testing: The Crossmemberless Bulkhead
 
@@ -188,6 +218,6 @@ grinder.
 The prior season's chassis helped move the team from 79th overall (no
 acceleration run) to 51st overall and 10th in acceleration at FSAE Michigan
 &mdash; on top of being 24&nbsp;lb lighter than the chassis two seasons before
-it. This season's design is sitting at 59&nbsp;lb unwelded against a 55&nbsp;lb
+it. This season's design is sitting at 59&nbsp;lb unwelded against a 58&nbsp;lb
 target, with welding starting this fall and a sub-70&nbsp;lb target once
 tabbed and welded.

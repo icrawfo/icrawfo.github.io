@@ -12,9 +12,9 @@ layout: default
     </div>
   </header>
 
-  {% if page.hero_placeholder %}
+  {% if page.hero_placeholder or page.hero_image %}
   <div class="container">
-    {% include media-placeholder.html caption=page.hero_placeholder ratio="16x9" size="hero" %}
+    {% include media-placeholder.html src=page.hero_image caption=page.hero_placeholder ratio="16x9" size="hero" %}
   </div>
   {% endif %}
 
@@ -42,7 +42,7 @@ layout: default
     <h2 class="gallery-heading">Gallery</h2>
     <div class="gallery-grid">
       {% for item in page.gallery %}
-      {% include media-placeholder.html caption=item.caption ratio="4x3" size="gallery" %}
+      {% include media-placeholder.html src=item.image caption=item.caption ratio="4x3" size="gallery" %}
       {% endfor %}
     </div>
   </div>

@@ -32,9 +32,17 @@ gallery:
   - caption: >-
       The 3 classification nozzles and 1 full-scale static-fire nozzle
       laid out side by side for a size comparison.
-  - caption: >-
-      6061-aluminum motor case and carrier rings, machined and ready for
-      assembly.
+  - image: /assets/images/rocket-motor-hardware.jpg
+    caption: >-
+      6061-aluminum motor hardware &mdash; carrier ring stock machined and
+      ready for assembly.
+  - image: /assets/images/rocket-nozzle-drawing.jpg
+    caption: >-
+      SolidWorks drawing for the classification nozzle, specifying the
+      270 Kn throat.
+  - image: /assets/images/rocket-payload-carrier.jpg
+    caption: >-
+      The welded payload carrier.
   - caption: >-
       Static-fire test still or video frame &mdash; motor lit, plume visible.
   - caption: >-
@@ -57,18 +65,19 @@ unforgiving to machine &mdash; it's brittle, abrasive on tooling, and doesn't
 forgive an aggressive feed rate the way aluminum does &mdash; so getting a
 repeatable process for it was most of the work.
 
-I machined 4 nozzles for the team's N-class APCP motor (roughly
+I machined 4 nozzles for the team's 98mm N-class APCP motor (roughly
 3,000&nbsp;N average thrust): 3 smaller nozzles for motor classification
-testing, each needing a precision 0.03&Prime; center bore, and 1 full-scale
-nozzle for the eventual static fire, with a center bore closer to
-1&Prime;. The classification nozzles were the harder machining problem by
-far &mdash; that small a bore in graphite leaves very little room for tool
-deflection or chip clearance before the part is scrap.
+testing, each with a center bore held to a &plusmn;0.03&Prime; tolerance, and
+1 full-scale nozzle for the eventual static fire, with a center bore closer
+to 1&Prime;. The classification nozzles were the harder machining problem by
+far &mdash; that tight a tolerance in graphite leaves very little room for
+tool deflection or chip clearance before the part is scrap.
 
 ## Results
 
 The classification and static-fire testing went cleanly &mdash; none of my
-parts failed, and the team was able to characterize the propellant using the
+parts failed, and the team characterized the propellant at a Kn (burn
+area-to-throat area ratio) of 270 at a 1,000 psi chamber pressure using the
 nozzles I built. I left the team in March 2026, before the competition motor
 flew, but the nozzle and carrier-ring manufacturing processes I put together
 were still in use after I left, and the team went on to place in the top 20

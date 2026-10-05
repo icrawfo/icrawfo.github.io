@@ -15,7 +15,7 @@ description: >-
      4. Any badminton achievements worth naming (level competed at, results)?
      5. A photo of you for this page? -->
 
-{% include media-placeholder.html caption="Portrait of Ian — at the FSAE car, in the machine shop, or a clean headshot. This photo carries the whole page." ratio="1x1" size="hero" %}
+{% include media-placeholder.html src="/assets/images/ian-portrait-speedway.jpg" alt="Ian at Michigan International Speedway with the FSAE car during competition" caption="Portrait of Ian — at the FSAE car, in the machine shop, or a clean headshot. This photo carries the whole page." ratio="1x1" size="hero" %}
 
 Ian Crawford is a Mechanical and Aerospace Engineering double-major at UC
 Irvine (Class of 2028), currently serving as Chassis Lead for Anteater

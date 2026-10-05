@@ -421,6 +421,20 @@ h1, h2, h3, h4 {
 .media-placeholder--card .media-placeholder-caption { font-size: 0.72rem; max-width: 280px; }
 .media-placeholder--gallery .media-placeholder-caption { font-size: 0.75rem; }
 
+.media-photo {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
 // -------------------------------------------------------------
 // Entry detail pages (project / experience)
 // -------------------------------------------------------------
