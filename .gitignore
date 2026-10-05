@@ -12,3 +12,4 @@ resume/*.out
 resume/*.fls
 resume/*.fdb_latexmk
 resume/*.synctex.gz
+Gemfile.lock

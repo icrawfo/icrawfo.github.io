@@ -63,12 +63,17 @@ gallery:
     caption: >-
       The 6061-aluminum pedal box on the manual mill for secondary
       operations, after the HAAS cut the primary press-fit bores.
-  - image: /assets/images/fsae-intake-manifold.jpg
+  - image: /assets/images/fsae-intake-manifold-closeup.jpg
     caption: >-
       The 3D-printed intake manifold mounted on the engine.
   - image: /assets/images/fsae-exhaust-system.jpg
     caption: >-
       The current exhaust system, manufactured and installed.
+  - video: /assets/videos/fsae-engine-test.mp4
+    poster: /assets/images/fsae-engine-test-poster.jpg
+    caption: >-
+      Night engine bench test &mdash; running the powertrain outside the
+      chassis before it goes back in the car.
   - image: /assets/images/fsae-cad-header-design.png
     caption: >-
       CAD of the new header design in progress, showing the packaging
@@ -86,6 +91,9 @@ gallery:
   - image: /assets/images/fsae-paddock-crowd.jpg
     caption: >-
       The car being rolled out at FSAE Michigan, paddock crowd in frame.
+  - image: /assets/images/fsae-on-track.jpg
+    caption: >-
+      The car on track at FSAE Michigan.
   - image: /assets/images/ian-portrait-shop.jpg
     caption: >-
       Ian with the car on the fixture table in the Vehicle Performance
@@ -101,7 +109,9 @@ chassis weighed 122&nbsp;lb and the car placed 79th overall without completing
 the acceleration event. Last season &mdash; my first on the team &mdash; we
 rebuilt the chassis in a single year for the first time in the program's
 20-year history, brought it down to 98&nbsp;lb, and finished 51st overall and
-10th in acceleration.
+10th in acceleration &mdash; the program's first one-year-build car to ever
+make it to competition, pass technical inspection on the first attempt, and
+compete in every single event.
 
 ## My Role
 

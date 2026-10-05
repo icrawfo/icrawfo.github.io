@@ -13,9 +13,11 @@ tagline: >-
 card_placeholder: >-
   Graphite nozzle on the lathe mid-machining, or a row of finished nozzles
   laid out together.
+card_image: /assets/images/rocket-nozzles-three.jpg
 hero_placeholder: >-
   Wide shot of the motor assembly (case, nozzle, carrier rings) laid out on
   a bench, or the rocket on the pad/in flight if available. 21:9 crop.
+hero_image: /assets/images/rocket-night-launch-pad.jpg
 stats:
   - value: "4"
     label: Graphite Nozzles Machined
@@ -26,12 +28,15 @@ stats:
   - value: Top 20
     label: Finish at IREC
 gallery:
-  - caption: >-
-      Graphite nozzle on the lathe, showing the tooling setup for the
-      center-bore cut.
-  - caption: >-
-      The 3 classification nozzles and 1 full-scale static-fire nozzle
-      laid out side by side for a size comparison.
+  - image: /assets/images/rocket-nozzle-handheld.jpg
+    caption: >-
+      A finished graphite nozzle, hand-held for inspection.
+  - image: /assets/images/rocket-nozzles-three.jpg
+    caption: >-
+      Classification nozzles laid out side by side for a size comparison.
+  - image: /assets/images/rocket-team-group.jpg
+    caption: >-
+      The team at the range with a lineup of rockets.
   - image: /assets/images/rocket-motor-hardware.jpg
     caption: >-
       6061-aluminum motor hardware &mdash; carrier ring stock machined and
@@ -43,8 +48,13 @@ gallery:
   - image: /assets/images/rocket-payload-carrier.jpg
     caption: >-
       The welded payload carrier.
-  - caption: >-
-      Static-fire test still or video frame &mdash; motor lit, plume visible.
+  - image: /assets/images/rocket-launch-flight.jpg
+    caption: >-
+      A team launch at the range, motor lit and climbing.
+  - video: /assets/videos/rocket-static-fire.mp4
+    poster: /assets/images/rocket-static-fire-poster.jpg
+    caption: >-
+      Static-fire test footage &mdash; motor lit, full burn.
   - caption: >-
       Ian at the lathe or mill working on rocket hardware.
 ---

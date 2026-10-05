@@ -1,4 +1,10 @@
-{% if include.src %}
+{% if include.video %}
+<div class="media-photo media-photo--{{ include.size }}" style="aspect-ratio: {{ include.ratio | replace: 'x', ' / ' }};">
+  <video controls preload="metadata" {% if include.poster %}poster="{{ include.poster | relative_url }}"{% endif %}>
+    <source src="{{ include.video | relative_url }}" type="video/mp4">
+  </video>
+</div>
+{% elsif include.src %}
 <div class="media-photo media-photo--{{ include.size }}" style="aspect-ratio: {{ include.ratio | replace: 'x', ' / ' }};">
   <img src="{{ include.src | relative_url }}" alt="{{ include.alt | default: include.caption | default: '' }}" loading="lazy">
 </div>

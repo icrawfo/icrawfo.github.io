@@ -35,6 +35,19 @@ gallery:
   - image: /assets/images/machine-shop-bracket-closeup.jpg
     caption: >-
       A CNC-machined aluminum bracket, fresh off the mill.
+  - image: /assets/images/machine-shop-bridgeport-indexer.jpg
+    caption: >-
+      Bridgeport work with a rotary indexer, machining a round part to spec.
+  - image: /assets/images/machine-shop-stock-prep.jpg
+    caption: >-
+      Prepping raw stock on the bandsaw before it goes to the mill.
+  - image: /assets/images/fsae-tooling-plate.jpg
+    caption: >-
+      A custom tooling plate, part of the 15+ faculty and graduate research
+      jobs I've machined.
+  - image: /assets/images/machine-shop-bracket-2.jpg
+    caption: >-
+      Another custom aluminum bracket machined for a research request.
 ---
 
 ## The Role

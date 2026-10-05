@@ -13,6 +13,7 @@ tagline: >-
 card_placeholder: >-
   A clean shot of Ian at a desk/workstation, or a screenshot/mockup of the
   search tool interface (redact anything confidential).
+card_image: /assets/images/fortinet-reception.jpg
 hero_placeholder: >-
   Wide shot of the Vancouver office or team space, or a clean abstract shot
   representing the internal tooling work (screenshot, whiteboard, etc.).

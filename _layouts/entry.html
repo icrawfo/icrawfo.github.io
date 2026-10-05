@@ -42,7 +42,7 @@ layout: default
     <h2 class="gallery-heading">Gallery</h2>
     <div class="gallery-grid">
       {% for item in page.gallery %}
-      {% include media-placeholder.html src=item.image caption=item.caption ratio="4x3" size="gallery" %}
+      {% include media-placeholder.html src=item.image video=item.video poster=item.poster caption=item.caption ratio="4x3" size="gallery" %}
       {% endfor %}
     </div>
   </div>
